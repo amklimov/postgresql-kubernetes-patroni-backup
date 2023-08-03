@@ -1,6 +1,6 @@
 This script makes a backup of PostgreSQL databases deployed in Kubernetes in the Patroni cluster. The script determines which of the Pod's is the leader and, through a single connection point to the Patroni cluster, performs database backup.
 
-On any of the Computers where the kubectl utility is installed (if necessary, it can be installed on any VM), create a directory for backups:
+On any VM where the kubectl utility is installed (if necessary, it can be installed on any VM), create a directory for backups:
 sudo mkdir -p /opt/backup/database
 
 If necessary, we assign rights to the directory:
